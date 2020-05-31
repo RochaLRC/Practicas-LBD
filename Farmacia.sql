@@ -12,7 +12,7 @@ Id int,
 NumEs int
 )
 
-insert into Medicamentos values (1, 'AMOXICILINA', $20, 2), (2, 'Diclofenac', $100, 2), 
+insert into Pastillas values (1, 'AMOXICILINA', $20, 2), (2, 'Diclofenac', $100, 2), 
 (3, 'Ketoconazole', '$200', 4), (4, 'Mannitol', '$500', 3), (5, 'Betaxolol', '$40', 2),
 (6, 'Bumetanide', '$400', 2), (7, 'Imatinib', '$150', 4), (8, 'SUPRAX', '$200', 4), (9, 'Hydrocodone/ibuprofen', '$100', 3)
 
