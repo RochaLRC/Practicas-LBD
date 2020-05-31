@@ -75,3 +75,22 @@ Create table Ticket (
  Subtotal float not null,
  Iva float not null
 )
+
+Alter table Clientes
+ADD constraint uc_DatPacientes_nombre unique (nombre);
+
+alter table DatPacientes
+ADD CONSTRAINT CHK_columnD_DOCEXC
+CHECK (FechaNac <Date add (year, -18, get date ()));
+
+alter table Doctores
+add constraint fk_doctores_NumeroEm foreign keey (NumeroEm)
+Rerences NumeroEm (id)
+
+alter table Receta
+add constraint fk_recetas_NumeroEm foreign keey (NumeroEm)
+Rerences NumeroEm (id)
+
+alter table Medicamentos
+add constraint fk_medicamentos_IdMedicamento foreign keey (idMedicamento)
+Rerences IdMedicamento (id)
